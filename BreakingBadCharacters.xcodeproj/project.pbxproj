@@ -27,6 +27,7 @@
 		D3C0375B27ECF9ED00B8D2A1 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375A27ECF9ED00B8D2A1 /* LocalDataManager.swift */; };
 		D3C0375E27ECFA0500B8D2A1 /* RoomImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */; };
 		D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */; };
+		D3C0376227ECFC8D00B8D2A1 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		D3C0375A27ECF9ED00B8D2A1 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomImp.swift; sourceTree = "<group>"; };
 		D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataManager.swift; sourceTree = "<group>"; };
+		D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */,
 				D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */,
 				D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */,
+				D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0376227ECFC8D00B8D2A1 /* CharactersViewModel.swift in Sources */,
 				D3C0374727ECF09400B8D2A1 /* CharactersCoordinator.swift in Sources */,
 				D3C0375E27ECFA0500B8D2A1 /* RoomImp.swift in Sources */,
 				D3C0375927ECF91E00B8D2A1 /* SessionAPI.swift in Sources */,
