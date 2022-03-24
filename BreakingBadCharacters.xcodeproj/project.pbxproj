@@ -14,6 +14,7 @@
 		D3C0371727ECE6D200B8D2A1 /* BreakingBadCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0371627ECE6D200B8D2A1 /* BreakingBadCharactersTests.swift */; };
 		D3C0373227ECEADD00B8D2A1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0373127ECEADD00B8D2A1 /* Coordinator.swift */; };
 		D3C0373B27ECEE2C00B8D2A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3C0373D27ECEE2C00B8D2A1 /* Localizable.strings */; };
+		D3C0374027ECEE5E00B8D2A1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0373F27ECEE5E00B8D2A1 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		D3C0373827ECEDD400B8D2A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D3C0373C27ECEE2C00B8D2A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D3C0373E27ECEE2E00B8D2A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3C0373F27ECEE5E00B8D2A1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C0373127ECEADD00B8D2A1 /* Coordinator.swift */,
+				D3C0373F27ECEE5E00B8D2A1 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0374027ECEE5E00B8D2A1 /* AppCoordinator.swift in Sources */,
 				D3C036FD27ECE6D100B8D2A1 /* AppDelegate.swift in Sources */,
 				D3C036FF27ECE6D100B8D2A1 /* SceneDelegate.swift in Sources */,
 				D3C0373227ECEADD00B8D2A1 /* Coordinator.swift in Sources */,
