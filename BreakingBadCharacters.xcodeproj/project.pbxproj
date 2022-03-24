@@ -26,6 +26,7 @@
 		D3C0375927ECF91E00B8D2A1 /* SessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375827ECF91E00B8D2A1 /* SessionAPI.swift */; };
 		D3C0375B27ECF9ED00B8D2A1 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375A27ECF9ED00B8D2A1 /* LocalDataManager.swift */; };
 		D3C0375E27ECFA0500B8D2A1 /* RoomImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */; };
+		D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D3C0375827ECF91E00B8D2A1 /* SessionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAPI.swift; sourceTree = "<group>"; };
 		D3C0375A27ECF9ED00B8D2A1 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomImp.swift; sourceTree = "<group>"; };
+		D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		D3C0374127ECF01700B8D2A1 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */,
 				D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */,
 				D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */,
 			);
@@ -322,6 +325,7 @@
 				D3C0375227ECF82C00B8D2A1 /* RemoteDataManager.swift in Sources */,
 				D3C0375727ECF8BB00B8D2A1 /* APIRequest.swift in Sources */,
 				D3C0375527ECF88200B8D2A1 /* URLSessionImp.swift in Sources */,
+				D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */,
 				D3C0374427ECF05A00B8D2A1 /* CharactersViewController.swift in Sources */,
 				D3C0373227ECEADD00B8D2A1 /* Coordinator.swift in Sources */,
 			);

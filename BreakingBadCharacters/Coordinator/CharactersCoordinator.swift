@@ -11,7 +11,7 @@ import UIKit
 class CharactersCoordinator: Coordinator {
     let presenter: UINavigationController
     
-    init(presenter: UINavigationController) {
+    init(presenter: UINavigationController, charactersDataManager: CharactersDataManager) {
         self.presenter = presenter
     }
     
