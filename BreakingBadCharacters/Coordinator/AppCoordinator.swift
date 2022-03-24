@@ -17,6 +17,13 @@ class AppCoordinator: Coordinator {
     }
 
     override func start() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .primaryColor
+        
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+        
         let navigationController = UINavigationController()
 
         let charactersCoordinator = CharactersCoordinator(presenter: navigationController)

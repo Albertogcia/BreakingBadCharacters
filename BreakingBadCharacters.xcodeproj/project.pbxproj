@@ -18,6 +18,7 @@
 		D3C0374427ECF05A00B8D2A1 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */; };
 		D3C0374527ECF05A00B8D2A1 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */; };
 		D3C0374727ECF09400B8D2A1 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0374627ECF09400B8D2A1 /* CharactersCoordinator.swift */; };
+		D3C0374A27ECF47800B8D2A1 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0374927ECF47800B8D2A1 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
 		D3C0374627ECF09400B8D2A1 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
+		D3C0374927ECF47800B8D2A1 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				D3C036FC27ECE6D100B8D2A1 /* AppDelegate.swift */,
 				D3C036FE27ECE6D100B8D2A1 /* SceneDelegate.swift */,
 				D3C0372F27ECE77A00B8D2A1 /* Resources */,
+				D3C0374827ECF45B00B8D2A1 /* Extensions */,
 				D3C0373027ECEAC400B8D2A1 /* Coordinator */,
 				D3C0374127ECF01700B8D2A1 /* Characters */,
 			);
@@ -133,6 +136,14 @@
 				D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		D3C0374827ECF45B00B8D2A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0374927ECF47800B8D2A1 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				D3C0374027ECEE5E00B8D2A1 /* AppCoordinator.swift in Sources */,
 				D3C036FD27ECE6D100B8D2A1 /* AppDelegate.swift in Sources */,
 				D3C036FF27ECE6D100B8D2A1 /* SceneDelegate.swift in Sources */,
+				D3C0374A27ECF47800B8D2A1 /* UIColor+Extensions.swift in Sources */,
 				D3C0374427ECF05A00B8D2A1 /* CharactersViewController.swift in Sources */,
 				D3C0373227ECEADD00B8D2A1 /* Coordinator.swift in Sources */,
 			);
