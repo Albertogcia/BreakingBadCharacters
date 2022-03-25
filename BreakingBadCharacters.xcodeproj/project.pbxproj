@@ -28,6 +28,8 @@
 		D3C0375E27ECFA0500B8D2A1 /* RoomImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */; };
 		D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */; };
 		D3C0376227ECFC8D00B8D2A1 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */; };
+		D3C0376927ED01D400B8D2A1 /* AllCharactersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376827ED01D400B8D2A1 /* AllCharactersRequest.swift */; };
+		D3C0376B27ED01F200B8D2A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376A27ED01F200B8D2A1 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomImp.swift; sourceTree = "<group>"; };
 		D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataManager.swift; sourceTree = "<group>"; };
 		D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		D3C0376827ED01D400B8D2A1 /* AllCharactersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersRequest.swift; sourceTree = "<group>"; };
+		D3C0376A27ED01F200B8D2A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				D3C036FC27ECE6D100B8D2A1 /* AppDelegate.swift */,
 				D3C036FE27ECE6D100B8D2A1 /* SceneDelegate.swift */,
+				D3C0376327ED018D00B8D2A1 /* Models */,
 				D3C0372F27ECE77A00B8D2A1 /* Resources */,
 				D3C0374827ECF45B00B8D2A1 /* Extensions */,
 				D3C0373027ECEAC400B8D2A1 /* Coordinator */,
@@ -152,9 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */,
+				D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */,
 				D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */,
 				D3C0374327ECF05A00B8D2A1 /* CharactersViewController.xib */,
-				D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -211,6 +216,47 @@
 				D3C0375D27ECFA0500B8D2A1 /* RoomImp.swift */,
 			);
 			path = Room;
+			sourceTree = "<group>";
+		};
+		D3C0376327ED018D00B8D2A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0376527ED01AA00B8D2A1 /* Responses */,
+				D3C0376427ED01A400B8D2A1 /* Requests */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3C0376427ED01A400B8D2A1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0376627ED01B100B8D2A1 /* Characters */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D3C0376527ED01AA00B8D2A1 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0376727ED01BB00B8D2A1 /* Character */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		D3C0376627ED01B100B8D2A1 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0376827ED01D400B8D2A1 /* AllCharactersRequest.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		D3C0376727ED01BB00B8D2A1 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0376A27ED01F200B8D2A1 /* Character.swift */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +371,11 @@
 				D3C036FD27ECE6D100B8D2A1 /* AppDelegate.swift in Sources */,
 				D3C0375B27ECF9ED00B8D2A1 /* LocalDataManager.swift in Sources */,
 				D3C036FF27ECE6D100B8D2A1 /* SceneDelegate.swift in Sources */,
+				D3C0376B27ED01F200B8D2A1 /* Character.swift in Sources */,
 				D3C0374A27ECF47800B8D2A1 /* UIColor+Extensions.swift in Sources */,
 				D3C0375227ECF82C00B8D2A1 /* RemoteDataManager.swift in Sources */,
 				D3C0375727ECF8BB00B8D2A1 /* APIRequest.swift in Sources */,
+				D3C0376927ED01D400B8D2A1 /* AllCharactersRequest.swift in Sources */,
 				D3C0375527ECF88200B8D2A1 /* URLSessionImp.swift in Sources */,
 				D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */,
 				D3C0374427ECF05A00B8D2A1 /* CharactersViewController.swift in Sources */,
