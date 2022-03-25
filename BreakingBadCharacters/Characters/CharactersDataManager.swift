@@ -8,9 +8,11 @@
 import Foundation
 
 protocol CharactersDataManager {
-    
+    func fetchAllCharacters(completion: @escaping (Result<[Character]?, Error>) -> ())
 }
 
 extension DataManager: CharactersDataManager {
-    
+    func fetchAllCharacters(completion: @escaping (Result<[Character]?, Error>) -> ()) {
+        remoteDataManager.fetchAllCharacters(completion: completion)
+    }
 }

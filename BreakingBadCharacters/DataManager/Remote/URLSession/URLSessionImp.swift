@@ -15,4 +15,9 @@ class URLSessionImp: RemoteDataManager{
         self.session = session
     }
     
+    func fetchAllCharacters(completion: @escaping (Result<[Character]?, Error>) -> ()) {
+        let request = AllCharactersRequest()
+        session.send(request: request, completion: completion)
+    }
+    
 }
