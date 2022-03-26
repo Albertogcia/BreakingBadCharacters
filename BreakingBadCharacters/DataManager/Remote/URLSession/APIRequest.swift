@@ -42,7 +42,7 @@ extension APIRequest {
         }
                 
         if !parameters.isEmpty {
-            components.queryItems?.append(contentsOf: parameters.map { URLQueryItem(name: $0, value: $1) })
+            components.queryItems = parameters.map { URLQueryItem(name: $0, value: $1) }
         }
         
         guard let finalUrl = components.url else {

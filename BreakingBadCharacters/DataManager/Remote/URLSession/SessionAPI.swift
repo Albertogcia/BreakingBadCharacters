@@ -8,12 +8,18 @@
 import Foundation
 
 final class SessionAPI {
-    lazy var session: URLSession = {
+    
+    var session: URLSession
+    
+    init(){
         let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration)
-
-        return session
-    }()
+        self.session =  URLSession(configuration: configuration)
+    }
+    
+    convenience init(session: URLSession){
+        self.init()
+        self.session = session
+    }
 
     func send<T: APIRequest>(request: T, completion: @escaping (Result<T.Response?, Error>) -> ()) {
         let request = request.requestWithBaseUrl()
@@ -28,7 +34,7 @@ final class SessionAPI {
             }
 
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode >= 400 {
-                let domainError = NSError(domain: "request", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Error"])
+                let domainError = NSError(domain: "request", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "ResponseError"])
                 DispatchQueue.main.async {
                     completion(.failure(domainError))
                 }
