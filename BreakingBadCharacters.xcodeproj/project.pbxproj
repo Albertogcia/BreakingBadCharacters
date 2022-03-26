@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		D32F594027EF2DAE004C5ADF /* XCTestCase+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F593F27EF2DAE004C5ADF /* XCTestCase+Extentions.swift */; };
 		D32F594327EF2DCF004C5ADF /* SharedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F594227EF2DCF004C5ADF /* SharedHelpers.swift */; };
+		D32F594527EF63BF004C5ADF /* URLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F594427EF63BF004C5ADF /* URLSessionTests.swift */; };
+		D32F594627EF672F004C5ADF /* URLSessionImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375427ECF88200B8D2A1 /* URLSessionImp.swift */; };
+		D32F594727EF6FEA004C5ADF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376A27ED01F200B8D2A1 /* Character.swift */; };
+		D32F594827EF711A004C5ADF /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375127ECF82C00B8D2A1 /* RemoteDataManager.swift */; };
+		D32F594927EF711D004C5ADF /* AllCharactersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376827ED01D400B8D2A1 /* AllCharactersRequest.swift */; };
 		D3787F1227EE140600C600F5 /* SessionAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3787F1127EE140600C600F5 /* SessionAPITests.swift */; };
 		D3787F1327EE169800C600F5 /* SessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375827ECF91E00B8D2A1 /* SessionAPI.swift */; };
 		D3787F1427EE169C00C600F5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375627ECF8BB00B8D2A1 /* APIRequest.swift */; };
@@ -49,6 +54,7 @@
 /* Begin PBXFileReference section */
 		D32F593F27EF2DAE004C5ADF /* XCTestCase+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extentions.swift"; sourceTree = "<group>"; };
 		D32F594227EF2DCF004C5ADF /* SharedHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedHelpers.swift; sourceTree = "<group>"; };
+		D32F594427EF63BF004C5ADF /* URLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTests.swift; sourceTree = "<group>"; };
 		D3787F1127EE140600C600F5 /* SessionAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAPITests.swift; sourceTree = "<group>"; };
 		D3C036F927ECE6D100B8D2A1 /* BreakingBadCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C036FC27ECE6D100B8D2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 			children = (
 				D32F593E27EF2D8F004C5ADF /* Shared */,
 				D3787F1127EE140600C600F5 /* SessionAPITests.swift */,
+				D32F594427EF63BF004C5ADF /* URLSessionTests.swift */,
 			);
 			path = BreakingBadCharactersTests;
 			sourceTree = "<group>";
@@ -405,9 +412,14 @@
 			files = (
 				D32F594327EF2DCF004C5ADF /* SharedHelpers.swift in Sources */,
 				D3787F1227EE140600C600F5 /* SessionAPITests.swift in Sources */,
+				D32F594527EF63BF004C5ADF /* URLSessionTests.swift in Sources */,
+				D32F594927EF711D004C5ADF /* AllCharactersRequest.swift in Sources */,
+				D32F594627EF672F004C5ADF /* URLSessionImp.swift in Sources */,
 				D32F594027EF2DAE004C5ADF /* XCTestCase+Extentions.swift in Sources */,
 				D3787F1327EE169800C600F5 /* SessionAPI.swift in Sources */,
+				D32F594827EF711A004C5ADF /* RemoteDataManager.swift in Sources */,
 				D3787F1427EE169C00C600F5 /* APIRequest.swift in Sources */,
+				D32F594727EF6FEA004C5ADF /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
