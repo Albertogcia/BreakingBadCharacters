@@ -36,10 +36,11 @@ class AppCoordinator: Coordinator {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().tintColor = .secondaryColor
 
         let navigationController = UINavigationController()
 
-        let charactersCoordinator = CharactersCoordinator(presenter: navigationController, charactersDataManager: dataManager)
+        let charactersCoordinator = CharactersCoordinator(presenter: navigationController, charactersDataManager: dataManager, characterDetailsDataManager: dataManager)
         addChildCoordinator(charactersCoordinator)
         charactersCoordinator.start()
 

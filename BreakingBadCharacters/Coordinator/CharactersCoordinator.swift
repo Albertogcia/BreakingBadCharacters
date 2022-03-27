@@ -11,10 +11,12 @@ import UIKit
 class CharactersCoordinator: Coordinator {
     let presenter: UINavigationController
     let charactersDataManager: CharactersDataManager
+    let characterDetailsDataManager: CharacterDetailsDataManager
 
-    init(presenter: UINavigationController, charactersDataManager: CharactersDataManager) {
+    init(presenter: UINavigationController, charactersDataManager: CharactersDataManager, characterDetailsDataManager: CharacterDetailsDataManager) {
         self.presenter = presenter
         self.charactersDataManager = charactersDataManager
+        self.characterDetailsDataManager = characterDetailsDataManager
     }
 
     override func start() {
@@ -30,6 +32,9 @@ class CharactersCoordinator: Coordinator {
 
 extension CharactersCoordinator: CharactersCoordinatorDelegate {
     func didSelect(character: Character) {
-        
+        let characterDetailsViewModel = CharacterDetailsViewModel(characterDetailsDataManager: characterDetailsDataManager, character: character)
+        let characterDetailsViewController = CharacterDetailsViewController(viewModel: characterDetailsViewModel)
+        characterDetailsViewModel.viewDelgate = characterDetailsViewController
+        presenter.pushViewController(characterDetailsViewController, animated: true)
     }
 }
