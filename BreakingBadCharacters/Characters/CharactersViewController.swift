@@ -107,6 +107,10 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectRow(at: indexPath)
+    }
 }
 
 extension CharactersViewController: CharactersViewDelegate {
