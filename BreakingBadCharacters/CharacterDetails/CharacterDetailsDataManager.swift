@@ -7,6 +7,12 @@
 
 import Foundation
 
-protocol CharacterDetailsDataManager {}
+protocol CharacterDetailsDataManager {
+    func fetchCharacterQuotes(characterName: String, completion: @escaping (Result<[CharacterQuote]?, Error>) -> ())
+}
 
-extension DataManager: CharacterDetailsDataManager {}
+extension DataManager: CharacterDetailsDataManager {
+    func fetchCharacterQuotes(characterName: String, completion: @escaping (Result<[CharacterQuote]?, Error>) -> ()) {
+        remoteDataManager.fetchCharacterQuotes(characterName: characterName, completion: completion)
+    }
+}

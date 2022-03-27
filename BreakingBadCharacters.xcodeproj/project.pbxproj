@@ -61,6 +61,8 @@
 		D3DE2F3427F0DF75005C6C2E /* CharacterDetailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3327F0DF75005C6C2E /* CharacterDetailsDataManager.swift */; };
 		D3DE2F3727F0DF95005C6C2E /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3527F0DF95005C6C2E /* CharacterDetailsViewController.swift */; };
 		D3DE2F3827F0DF95005C6C2E /* CharacterDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DE2F3627F0DF95005C6C2E /* CharacterDetailsViewController.xib */; };
+		D3DE2F3B27F0E9DF005C6C2E /* CharacterQuotesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3A27F0E9DF005C6C2E /* CharacterQuotesRequest.swift */; };
+		D3DE2F3D27F0EAC9005C6C2E /* CharacterQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3C27F0EAC9005C6C2E /* CharacterQuote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		D3DE2F3327F0DF75005C6C2E /* CharacterDetailsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsDataManager.swift; sourceTree = "<group>"; };
 		D3DE2F3527F0DF95005C6C2E /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		D3DE2F3627F0DF95005C6C2E /* CharacterDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsViewController.xib; sourceTree = "<group>"; };
+		D3DE2F3A27F0E9DF005C6C2E /* CharacterQuotesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterQuotesRequest.swift; sourceTree = "<group>"; };
+		D3DE2F3C27F0EAC9005C6C2E /* CharacterQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterQuote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C0376827ED01D400B8D2A1 /* AllCharactersRequest.swift */,
+				D3DE2F3A27F0E9DF005C6C2E /* CharacterQuotesRequest.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C0376A27ED01F200B8D2A1 /* Character.swift */,
+				D3DE2F3C27F0EAC9005C6C2E /* CharacterQuote.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 				D3C0375027ECF7EA00B8D2A1 /* DataManager.swift in Sources */,
 				D32F594E27EF747B004C5ADF /* Database.xcdatamodeld in Sources */,
 				D3C0374027ECEE5E00B8D2A1 /* AppCoordinator.swift in Sources */,
+				D3DE2F3D27F0EAC9005C6C2E /* CharacterQuote.swift in Sources */,
 				D3DE2F1727F0704F005C6C2E /* ManagedCharacter.swift in Sources */,
 				D3C036FD27ECE6D100B8D2A1 /* AppDelegate.swift in Sources */,
 				D3C0375B27ECF9ED00B8D2A1 /* LocalDataManager.swift in Sources */,
@@ -484,6 +491,7 @@
 				D3DE2F3727F0DF95005C6C2E /* CharacterDetailsViewController.swift in Sources */,
 				D3DE2F3427F0DF75005C6C2E /* CharacterDetailsDataManager.swift in Sources */,
 				D3C0375527ECF88200B8D2A1 /* URLSessionImp.swift in Sources */,
+				D3DE2F3B27F0E9DF005C6C2E /* CharacterQuotesRequest.swift in Sources */,
 				D3C0376027ECFBB500B8D2A1 /* CharactersDataManager.swift in Sources */,
 				D3DE2F3227F0DF5D005C6C2E /* CharacterDetailsViewModel.swift in Sources */,
 				D3C0374427ECF05A00B8D2A1 /* CharactersViewController.swift in Sources */,

@@ -9,4 +9,6 @@ import Foundation
 
 protocol RemoteDataManager {
     func fetchAllCharacters(completion: @escaping (Result<[Character]?, Error>) -> ())
+    
+    func fetchCharacterQuotes(characterName: String, completion: @escaping (Result<[CharacterQuote]?, Error>) -> ())
 }
