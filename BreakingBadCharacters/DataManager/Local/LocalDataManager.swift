@@ -7,6 +7,11 @@
 
 import Foundation
 
-protocol LocalDataManager{
+protocol LocalDataManager {
     
+    func fetchAllCharacters(completion: @escaping (Result<[Character]?, Error>) -> Void)
+    
+    func insertCharacters(_ characters: [Character], completion: @escaping (Error?) -> Void)
+    
+    func deleteAllCharacters(completion: @escaping (Error?) -> Void)
 }
