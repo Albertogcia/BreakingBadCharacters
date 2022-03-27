@@ -5,3 +5,13 @@
   Created by Alberto García Antuña on 24/3/22.
   
 */
+//MARK: - Global
+"global_error" = "Error";
+"global_ok" = "Ok";
+
+//MARK: - Characters
+"characters_title" = "Characters";
+"characters_breaking_back_section_header_title" = "Breaking bad";
+"characters_better_call_saul_section_header_title" = "Better call saul";
+"characters_no_data_message" = "There is no data available";
+

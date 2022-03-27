@@ -51,7 +51,12 @@
 		D3DE2F2027F08586005C6C2E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D3DE2F1F27F08586005C6C2E /* Kingfisher */; };
 		D3DE2F2327F08906005C6C2E /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F2127F08906005C6C2E /* CharacterCell.swift */; };
 		D3DE2F2427F08906005C6C2E /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DE2F2227F08906005C6C2E /* CharacterCell.xib */; };
+		D3DE2F2A27F0B129005C6C2E /* CharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F2927F0B129005C6C2E /* CharactersViewControllerTests.swift */; };
+		D3DE2F2B27F0B26B005C6C2E /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0374227ECF05A00B8D2A1 /* CharactersViewController.swift */; };
+		D3DE2F2C27F0B280005C6C2E /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0376127ECFC8D00B8D2A1 /* CharactersViewModel.swift */; };
+		D3DE2F2D27F0B368005C6C2E /* CharactersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375F27ECFBB500B8D2A1 /* CharactersDataManager.swift */; };
 		D3DE2F2E27F0B796005C6C2E /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F2127F08906005C6C2E /* CharacterCell.swift */; };
+		D3DE2F2F27F0B7A7005C6C2E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0374F27ECF7EA00B8D2A1 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +108,7 @@
 		D3DE2F1427F05EF6005C6C2E /* NSManagedObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject + Extensions.swift"; sourceTree = "<group>"; };
 		D3DE2F2127F08906005C6C2E /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		D3DE2F2227F08906005C6C2E /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		D3DE2F2927F0B129005C6C2E /* CharactersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 				D3787F1127EE140600C600F5 /* SessionAPITests.swift */,
 				D32F594427EF63BF004C5ADF /* URLSessionTests.swift */,
 				D32F595227EF799E004C5ADF /* CoreDataTests.swift */,
+				D3DE2F2927F0B129005C6C2E /* CharactersViewControllerTests.swift */,
 			);
 			path = BreakingBadCharactersTests;
 			sourceTree = "<group>";
@@ -416,6 +423,7 @@
 			files = (
 				D3C0374527ECF05A00B8D2A1 /* CharactersViewController.xib in Resources */,
 				D3C0370C27ECE6D200B8D2A1 /* LaunchScreen.storyboard in Resources */,
+				D3DE2F2427F08906005C6C2E /* CharacterCell.xib in Resources */,
 				D3C0373B27ECEE2C00B8D2A1 /* Localizable.strings in Resources */,
 				D3C0370927ECE6D200B8D2A1 /* Assets.xcassets in Resources */,
 			);
@@ -467,16 +475,21 @@
 				D3DE2F1827F07144005C6C2E /* ManagedCharacter.swift in Sources */,
 				D3787F1227EE140600C600F5 /* SessionAPITests.swift in Sources */,
 				D3DE2F2E27F0B796005C6C2E /* CharacterCell.swift in Sources */,
+				D3DE2F2D27F0B368005C6C2E /* CharactersDataManager.swift in Sources */,
+				D3DE2F2F27F0B7A7005C6C2E /* DataManager.swift in Sources */,
 				D32F594527EF63BF004C5ADF /* URLSessionTests.swift in Sources */,
+				D3DE2F2C27F0B280005C6C2E /* CharactersViewModel.swift in Sources */,
 				D32F594B27EF72A9004C5ADF /* URLProtocolStub.swift in Sources */,
 				D32F594927EF711D004C5ADF /* AllCharactersRequest.swift in Sources */,
 				D3DE2F1527F05EF6005C6C2E /* NSManagedObject + Extensions.swift in Sources */,
 				D32F594627EF672F004C5ADF /* URLSessionImp.swift in Sources */,
 				D32F594027EF2DAE004C5ADF /* XCTestCase+Extentions.swift in Sources */,
 				D3787F1327EE169800C600F5 /* SessionAPI.swift in Sources */,
+				D3DE2F2A27F0B129005C6C2E /* CharactersViewControllerTests.swift in Sources */,
 				D32F595627EFA87B004C5ADF /* LocalDataManager.swift in Sources */,
 				D32F595327EF799E004C5ADF /* CoreDataTests.swift in Sources */,
 				D32F594827EF711A004C5ADF /* RemoteDataManager.swift in Sources */,
+				D3DE2F2B27F0B26B005C6C2E /* CharactersViewController.swift in Sources */,
 				D3787F1427EE169C00C600F5 /* APIRequest.swift in Sources */,
 				D32F595527EF7A2A004C5ADF /* CoreDataImp.swift in Sources */,
 				D32F595427EF7A27004C5ADF /* Database.xcdatamodeld in Sources */,

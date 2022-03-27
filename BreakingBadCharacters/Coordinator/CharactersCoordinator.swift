@@ -28,4 +28,8 @@ class CharactersCoordinator: Coordinator {
     override func finish() {}
 }
 
-extension CharactersCoordinator: CharactersCoordinatorDelegate {}
+extension CharactersCoordinator: CharactersCoordinatorDelegate {
+    func didSelect(character: Character) {
+        
+    }
+}

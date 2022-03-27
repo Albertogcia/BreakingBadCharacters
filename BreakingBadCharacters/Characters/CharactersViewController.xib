@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersViewController" customModule="BreakingBadCharacters" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="2fK-Ap-dmi" id="EFD-qH-xPc"/>
+                <outlet property="noDataLabel" destination="2WO-oa-vo8" id="CV3-Xc-ljk"/>
+                <outlet property="tableView" destination="Bdm-Y9-FsM" id="Kru-i7-NTk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,14 +21,44 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Y9-FsM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2fK-Ap-dmi">
+                    <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                    <color key="color" name="primaryColor"/>
+                </activityIndicatorView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-oa-vo8">
+                    <rect key="frame" x="36" y="444.5" width="342" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="primaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="secondaryColor"/>
-            <point key="canvasLocation" x="132" y="60"/>
+            <constraints>
+                <constraint firstItem="2WO-oa-vo8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1L2-4b-XE2"/>
+                <constraint firstItem="2fK-Ap-dmi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5eR-FJ-gTz"/>
+                <constraint firstAttribute="bottom" secondItem="Bdm-Y9-FsM" secondAttribute="bottom" id="Hen-MZ-Uyo"/>
+                <constraint firstItem="Bdm-Y9-FsM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LDQ-pW-c1s"/>
+                <constraint firstItem="2fK-Ap-dmi" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Lj6-B2-kZ3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2WO-oa-vo8" secondAttribute="trailing" constant="36" id="Xgt-iI-pie"/>
+                <constraint firstItem="Bdm-Y9-FsM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aeA-o5-zE8"/>
+                <constraint firstAttribute="trailing" secondItem="Bdm-Y9-FsM" secondAttribute="trailing" id="ay8-WS-9ry"/>
+                <constraint firstItem="2WO-oa-vo8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="scH-1C-DNG"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="59.598214285714285"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="primaryColor">
+            <color red="0.22400000691413879" green="0.24300000071525574" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="secondaryColor">
-            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93300002813339233" green="0.93300002813339233" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
