@@ -18,7 +18,7 @@ class AppCoordinator: Coordinator {
     }()
 
     lazy var localDataManager: LocalDataManager = {
-        RoomImp()
+        CoreDataImp()
     }()
 
     lazy var dataManager: DataManager = {
