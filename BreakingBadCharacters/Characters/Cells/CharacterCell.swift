@@ -12,6 +12,7 @@ class CharacterCell: UITableViewCell {
     
     @IBOutlet var characterImageView: UIImageView!
     @IBOutlet var characterNameLabel: UILabel!
+    @IBOutlet var characterActorNameLabel: UILabel!
     @IBOutlet var characterNameBackground: UIView!
     
     var character: Character? {
@@ -29,10 +30,12 @@ class CharacterCell: UITableViewCell {
     override func prepareForReuse() {
         characterImageView.image = nil
         characterNameLabel.text = nil
+        characterActorNameLabel.text = nil
     }
     
     private func configureView(character: Character){
         self.characterNameLabel.text = character.characterName
+        self.characterActorNameLabel.text = character.actorName
         guard let url = character.imageUrl else { return }
         self.characterImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
