@@ -37,13 +37,11 @@ class CharactersViewModel {
         betterCallSaulCharacters = []
         charactersDataManager.fetchAllCharacters { [weak self] result in
             guard let self = self else { return }
-            DispatchQueue.main.async {
-                switch result {
-                case let .success(characters):
-                    self.groupCharacters(characters: characters)
-                case let .failure(error):
-                    self.viewDelgate?.errorFetchingCharacters(error: error)
-                }
+            switch result {
+            case let .success(characters):
+                self.groupCharacters(characters: characters)
+            case let .failure(error):
+                self.viewDelgate?.errorFetchingCharacters(error: error)
             }
         }
     }
