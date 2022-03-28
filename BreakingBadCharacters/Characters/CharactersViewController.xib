@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Y9-FsM">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Y9-FsM">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
@@ -46,8 +46,8 @@
                 <constraint firstItem="Bdm-Y9-FsM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LDQ-pW-c1s"/>
                 <constraint firstItem="2fK-Ap-dmi" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Lj6-B2-kZ3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2WO-oa-vo8" secondAttribute="trailing" constant="36" id="Xgt-iI-pie"/>
-                <constraint firstItem="Bdm-Y9-FsM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aeA-o5-zE8"/>
                 <constraint firstAttribute="trailing" secondItem="Bdm-Y9-FsM" secondAttribute="trailing" id="ay8-WS-9ry"/>
+                <constraint firstItem="Bdm-Y9-FsM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bRX-b3-Tzh"/>
                 <constraint firstItem="2WO-oa-vo8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="scH-1C-DNG"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="59.598214285714285"/>

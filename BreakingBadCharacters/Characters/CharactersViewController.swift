@@ -38,6 +38,11 @@ class CharactersViewController: UIViewController {
         //
         noDataLabel.text = NSLocalizedString("characters_no_data_message", comment: "")
         //
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        //
         tableView.register(UINib(nibName: CHARACTER_CELL_IDENTIFIER, bundle: nil), forCellReuseIdentifier: CHARACTER_CELL_IDENTIFIER)
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0
@@ -110,6 +115,13 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.didSelectRow(at: indexPath)
+    }
+}
+
+extension CharactersViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        self.viewModel.filterCharactersBy(searchBar.text)
     }
 }
 

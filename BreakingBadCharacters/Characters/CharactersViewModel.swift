@@ -19,10 +19,13 @@ protocol CharactersViewDelegate: AnyObject {
 class CharactersViewModel {
     weak var coordinatorDelegate: CharactersCoordinatorDelegate?
     weak var viewDelgate: CharactersViewDelegate?
-    let charactersDataManager: CharactersDataManager
+    private let charactersDataManager: CharactersDataManager
 
-    var breakingBadCharacters: [Character] = []
-    var betterCallSaulCharacters: [Character] = []
+    private var allCharacters: [Character] = []
+    private var filteredCharacters: [Character] = []
+
+    internal var breakingBadCharacters: [Character] = []
+    internal var betterCallSaulCharacters: [Character] = []
 
     var hasData: Bool {
         return !breakingBadCharacters.isEmpty || !betterCallSaulCharacters.isEmpty
@@ -39,23 +42,33 @@ class CharactersViewModel {
             guard let self = self else { return }
             switch result {
             case let .success(characters):
-                self.groupCharacters(characters: characters)
+                self.allCharacters = characters ?? []
+                self.filteredCharacters = self.allCharacters
+                self.groupCharacters()
             case let .failure(error):
                 self.viewDelgate?.errorFetchingCharacters(error: error)
             }
         }
     }
 
-    private func groupCharacters(characters: [Character]?) {
-        for character in characters ?? [] {
-            if !(character.breakingBadSeasonsAppearance ?? []).isEmpty {
-                breakingBadCharacters.append(character)
-            }
-            if !(character.betterCallSaulSeasonsAppearance ?? []).isEmpty {
-                betterCallSaulCharacters.append(character)
-            }
-        }
+    private func groupCharacters() {
+        breakingBadCharacters = filteredCharacters.filter { !($0.breakingBadSeasonsAppearance ?? []).isEmpty }
+        betterCallSaulCharacters = filteredCharacters.filter { !($0.betterCallSaulSeasonsAppearance ?? []).isEmpty }
+        //
         viewDelgate?.charactersFetched()
+    }
+
+    func filterCharactersBy(_ text: String?) {
+        guard let text = text, !text.trimmingCharacters(in: .whitespaces).isEmpty else {
+            filteredCharacters = allCharacters
+            groupCharacters()
+            return
+        }
+        filteredCharacters = allCharacters.filter { character in
+            guard let name = character.characterName, let actorName = character.actorName else { return false }
+            return name.lowercased().contains(text.lowercased()) || actorName.lowercased().contains(text.lowercased())
+        }
+        groupCharacters()
     }
 
     // MARK: - TableView helper methods
