@@ -1,0 +1,4 @@
+os: osx
+osx_image: xcode13.2.1
+language: swift
+script: xcodebuild clean build test -project BreakingBadCharacters.xcodeproj -scheme "BreakingBadCharacters" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro" ONLY_ACTIVE_ARCH=YES
