@@ -45,7 +45,7 @@ struct Character: Codable {
         //
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = .autoupdatingCurrent
-        dateFormatter.dateFormat = "dd-MM-yyyy"
+        dateFormatter.dateFormat = "MM-dd-yyyy"
         //
         guard let date = dateFormatter.date(from: birthdayString) else { return nil }
         //

@@ -34,7 +34,7 @@ extension CharactersCoordinator: CharactersCoordinatorDelegate {
     func didSelect(character: Character) {
         let characterDetailsViewModel = CharacterDetailsViewModel(characterDetailsDataManager: characterDetailsDataManager, character: character)
         let characterDetailsViewController = CharacterDetailsViewController(viewModel: characterDetailsViewModel)
-        characterDetailsViewModel.viewDelgate = characterDetailsViewController
+        characterDetailsViewModel.viewDelegate = characterDetailsViewController
         presenter.pushViewController(characterDetailsViewController, animated: true)
     }
 }

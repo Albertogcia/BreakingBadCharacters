@@ -20,6 +20,8 @@
 		D32F595427EF7A27004C5ADF /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D32F594C27EF747B004C5ADF /* Database.xcdatamodeld */; };
 		D32F595527EF7A2A004C5ADF /* CoreDataImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375D27ECFA0500B8D2A1 /* CoreDataImp.swift */; };
 		D32F595627EFA87B004C5ADF /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375A27ECF9ED00B8D2A1 /* LocalDataManager.swift */; };
+		D3328DBF27F2292E0034D56A /* CharacterQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3C27F0EAC9005C6C2E /* CharacterQuote.swift */; };
+		D3328DC027F2293D0034D56A /* CharacterQuotesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2F3A27F0E9DF005C6C2E /* CharacterQuotesRequest.swift */; };
 		D3787F1227EE140600C600F5 /* SessionAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3787F1127EE140600C600F5 /* SessionAPITests.swift */; };
 		D3787F1327EE169800C600F5 /* SessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375827ECF91E00B8D2A1 /* SessionAPI.swift */; };
 		D3787F1427EE169C00C600F5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0375627ECF8BB00B8D2A1 /* APIRequest.swift */; };
@@ -505,6 +507,7 @@
 			files = (
 				D32F594327EF2DCF004C5ADF /* SharedHelpers.swift in Sources */,
 				D3DE2F1827F07144005C6C2E /* ManagedCharacter.swift in Sources */,
+				D3328DBF27F2292E0034D56A /* CharacterQuote.swift in Sources */,
 				D3787F1227EE140600C600F5 /* SessionAPITests.swift in Sources */,
 				D3DE2F2E27F0B796005C6C2E /* CharacterCell.swift in Sources */,
 				D3DE2F2D27F0B368005C6C2E /* CharactersDataManager.swift in Sources */,
@@ -522,6 +525,7 @@
 				D32F595327EF799E004C5ADF /* CoreDataTests.swift in Sources */,
 				D32F594827EF711A004C5ADF /* RemoteDataManager.swift in Sources */,
 				D3DE2F2B27F0B26B005C6C2E /* CharactersViewController.swift in Sources */,
+				D3328DC027F2293D0034D56A /* CharacterQuotesRequest.swift in Sources */,
 				D3787F1427EE169C00C600F5 /* APIRequest.swift in Sources */,
 				D32F595527EF7A2A004C5ADF /* CoreDataImp.swift in Sources */,
 				D32F595427EF7A27004C5ADF /* Database.xcdatamodeld in Sources */,
