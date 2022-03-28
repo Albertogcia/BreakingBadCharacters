@@ -128,10 +128,9 @@ extension CharactersViewController: UISearchResultsUpdating {
 extension CharactersViewController: CharactersViewDelegate {
     func charactersFetched() {
         activityIndicator.isHidden = true
+        self.noDataLabel.isHidden = viewModel.hasData
         tableView.reloadData()
-        if !viewModel.hasData{
-            self.noDataLabel.isHidden = false
-        }
+        
     }
 
     func errorFetchingCharacters(error: Error) {
