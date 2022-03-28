@@ -9,9 +9,20 @@
 //MARK: - Global
 "global_error" = "Error";
 "global_ok" = "Ok";
+"global_unknown" = "Desconocida";
 
 //MARK: - Characters
 "characters_title" = "Personajes";
 "characters_breaking_back_section_header_title" = "Breaking bad";
 "characters_better_call_saul_section_header_title" = "Better call saul";
 "characters_no_data_message" = "No hay datos disponibles";
+
+//MARK: - CharacterDetails
+"details_name_title" = "Nombre del personaje";
+"details_actor_name_title" = "Nombre del actor";
+"details_age_title" = "Edad";
+"details_breaking_bad_appearance_title" = "Apariciones en temporadas de breaking bad";
+"details_better_call_saul_appearance_title" = "Apariciones en temporadas de better call saul";
+"details_quote_title" = "Frases famosas";
+"details_no_season_appearance" = "Este personaje no aparece en esta serie";
+"details_no_quotes" = "Este personaje no tiene ninguna frase famosa";

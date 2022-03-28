@@ -8,6 +8,7 @@
 //MARK: - Global
 "global_error" = "Error";
 "global_ok" = "Ok";
+"global_unknown" = "Unknown";
 
 //MARK: - Characters
 "characters_title" = "Characters";
@@ -15,3 +16,12 @@
 "characters_better_call_saul_section_header_title" = "Better call saul";
 "characters_no_data_message" = "There is no data available";
 
+//MARK: - CharacterDetails
+"details_name_title" = "Character name";
+"details_actor_name_title" = "Actor name";
+"details_age_title" = "Age";
+"details_breaking_bad_appearance_title" = "Breaking bad seasons appearance";
+"details_better_call_saul_appearance_title" = "Better call saul appearance";
+"details_quote_title" = "Quotes";
+"details_no_season_appearance" = "This character doesn't appear in this series";
+"details_no_quotes" = "This character doesn't have any famous quote";
